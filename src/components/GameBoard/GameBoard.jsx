@@ -3,7 +3,6 @@ import { useSelector } from "react-redux";
 import Header from "../Header/Header";
 import s from "./GameBoard.module.css";
 import Card from "./../Card/Card";
-import { formatSeconds } from "../../helpers/timerView";
 const GameBoard = () => {
   //   const dispatch = useDispatch();
   const { cards, isGameStart } = useSelector((state) => state.mainReducer);
@@ -24,10 +23,7 @@ const GameBoard = () => {
         ))}
       </div>
       <div className={`${s.times} ${isGameStart && s.hide}`}>
-        <div className={s.times_title}>Ваши лучшие результаты:</div>
-        {times.map((time) => (
-          <div className={s.time}>{formatSeconds(time)}</div>
-        ))}
+        Я хочу сыграть с тобой в одну игру. Жми старт!
       </div>
     </div>
   );

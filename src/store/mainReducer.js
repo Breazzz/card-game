@@ -33,10 +33,6 @@ const initialState = {
     { id: 10, isOpen: false, value: "мышь", isOnBoard: true },
     { id: 11, isOpen: false, value: "птица", isOnBoard: true },
     { id: 12, isOpen: false, value: "птица", isOnBoard: true },
-    { id: 13, isOpen: false, value: "змея", isOnBoard: true },
-    { id: 14, isOpen: false, value: "змея", isOnBoard: true },
-    { id: 15, isOpen: false, value: "человек", isOnBoard: true },
-    { id: 16, isOpen: false, value: "человек", isOnBoard: true },
   ],
 };
 

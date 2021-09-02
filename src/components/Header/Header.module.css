@@ -1,40 +1,19 @@
-.header {
+.container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 50px;
+  padding: 37px 0;
 }
 
-.counter,
-.timer {
-  font-size: 50px;
-  color: #fff;
-}
-.counter span {
-  color: #aca6a6;
+.count {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 48px;
+  color: #D35445;
 }
 
-.button {
-  cursor: pointer;
-  background: #567fed;
-  border-radius: 10px;
-  font-size: 30px;
-  padding: 7px 20px;
-
-  transition: opacity .4s ease;
-}
-
-.button.hide{
-  cursor: default;
-  opacity: .5;
-}
-
-@media (max-width: 500px) {
-  .counter,
-  .timer {
-    font-size: 30px;
-  }
-  .button{
-    font-size: 15px;
-  }
+.totalCount {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 48px;
 }

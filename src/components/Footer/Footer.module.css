@@ -1,0 +1,16 @@
+.footer {
+    position:absolute;
+    bottom:0;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.text {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: rgba(255, 255, 255, 0.5);
+}

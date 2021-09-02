@@ -13,7 +13,7 @@ function App() {
       <div className="container">
         <Header />
         <GameBoard />
-        <Footer/>
+        <Footer />
       </div>
     </div>
   );

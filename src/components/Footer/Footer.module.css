@@ -1,15 +1,31 @@
 .footer {
-    margin-top: 20px;
-    bottom:0;
-    display: flex;
-    justify-content: space-between;
+  padding-top: 28px;
+  bottom: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.container {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
 }
 
 .text {
-    font-family: Inter;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 16px;
-    color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.iconsContainer img:nth-last-child(n+2) {
+  margin-right: 12px;
+}
+
+@media only screen and (max-width: 1640px) {
+  .container {
+    max-width: 1000px;
+  }
 }

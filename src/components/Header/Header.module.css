@@ -17,3 +17,9 @@
   font-size: 24px;
   line-height: 48px;
 }
+
+@media only screen and (max-width: 1640px) {
+  .container {
+    padding: 24px 0;
+  }
+}

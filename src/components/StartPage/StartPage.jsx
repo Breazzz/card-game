@@ -12,7 +12,7 @@ const StartPage = () => {
 
   return (
     <div className={s.startPage}>
-      <img src={jigsaw} alt="img"/>
+      <img className={s.imageJigsaw} src={jigsaw} alt="img"/>
       <h1 className={s.title}>Привет!</h1>
       <span className={s.text}>Я хочу сыграть с тобой в одну игру... Сыграй со мной <br/> и получи приз!</span>
       <button

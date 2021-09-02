@@ -1,12 +1,19 @@
-import GameBoard from "./components/GameBoard/GameBoard";
-import "./index.css";
+import React from 'react';
+
+import GameBoard from './components/GameBoard/GameBoard';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+
+import './index.css';
+
+
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <div className="container">
-        <div className="inner">
-          <GameBoard />
-        </div>
+        <Header />
+        <GameBoard />
+        <Footer/>
       </div>
     </div>
   );

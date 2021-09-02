@@ -1,26 +1,23 @@
-import React from "react";
-import { useSelector } from "react-redux";
-import s from "./Header.module.css";
-import { startGame } from "../../store/mainReducer";
-import { useDispatch } from "react-redux";
+import React from 'react';
+import { useSelector } from 'react-redux';
+
+import logo from '../../static/images/logo.svg';
+import s from './Header.module.css';
+
+
 const Header = () => {
-  const { cardsGuessed, isGameStart } = useSelector(
+  const { cardsGuessed } = useSelector(
     (state) => state.mainReducer
   );
-  const dispatch = useDispatch();
+
   return (
-    <div className={s.header}>
-      {/*<div className={s.timer}>{formatSeconds(gameTimer)}</div>*/}
-      <button
-        disabled={isGameStart}
-        className={`${s.button} ${isGameStart && s.hide}`}
-        onClick={() => dispatch(startGame())}
-      >
-        старт
-      </button>
-      <div className={s.counter}>
-        {cardsGuessed}
-        <span>/12</span>
+    <div>
+      <div className={s.container}>
+        <img src={logo} alt="logo"/>
+        <div>
+          <span className={s.count}>{cardsGuessed}</span>
+          <span className={s.totalCount}>/12</span>
+        </div>
       </div>
     </div>
   );

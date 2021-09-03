@@ -10,13 +10,15 @@ const Footer = () => {
 
   return (
     <div className={s.footer}>
-      <span className={s.text}>
-        © 2021 Justice-team. All rights reserved.
-      </span>
-      <div>
-        <img src={iconIn} alt="icon-in"/>
-        <img src={iconVk} alt="icon-vk"/>
-        <img src={iconInst} alt="icon-inst"/>
+      <div className={s.container}>
+        <span className={s.text}>
+          © 2021 Justice-team. All rights reserved.
+        </span>
+        <div className={s.iconsContainer}>
+          <img src={iconIn} alt="icon-in"/>
+          <img src={iconVk} alt="icon-vk"/>
+          <img src={iconInst} alt="icon-inst"/>
+        </div>
       </div>
     </div>
   );
